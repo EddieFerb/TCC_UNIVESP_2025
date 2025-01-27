@@ -1,0 +1,10 @@
+# Arquivos de ambiente e dados sensíveis
+/dados/bruto/
+/dados/intermediario/
+/ambiente/
+*.pkl
+*.log
+*.csv
+__pycache__/
+*.pyc
+.DS_Store
