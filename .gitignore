@@ -1,10 +1,38 @@
 # Arquivos de ambiente e dados sensíveis
-/dados/bruto/
-/dados/intermediario/
-/ambiente/
-*.pkl
+# Ignorar dados brutos e intermediários
+informacao/dados/bruto/
+informacao/dados/intermediario/
+
+# Ignorar modelos treinados e arquivos salvos
+informacao/modelos/modelos_salvos/
+informacao/modelos/resultados_modelos/
+
+# Ignorar logs e arquivos temporários
 *.log
-*.csv
-__pycache__/
-*.pyc
+*.pkl
+*.tmp
+*.zip
+*.tar.gz
+
+# Ignorar arquivos de ambiente
+.venv/
+.env/
+informacao/ambiente/ambiente.yml
+
+# Ignorar notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ignorar arquivos do sistema
 .DS_Store
+.Trash/
+
+# Ignorar diretórios específicos
+Library/
+Pictures/
+.config/
+.gradle/
+.jenkins/
+
+# Ignorar extensões ou arquivos específicos
+*.photoslibrary
+*.log
