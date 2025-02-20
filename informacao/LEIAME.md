@@ -25,7 +25,6 @@ Informacao-UEL/
 │       └── visualizacao_resultados.ipynb
 ├── scripts/
 │   ├── coleta_dados/
-│   │   └── raspagem_web.py
 │   │   └── coleta_dados_oficiais.py
 │   ├── processamento_dados/
 │   │   └── pre_processamento.py
@@ -152,12 +151,22 @@ Para o Artigo:
 
 Execução
 1.	Coleta de Dados
-Execute o script de raspagem web para coletar os dados:
-python scripts/coleta_dados/raspagem_web.py
+Execute os scripts para coletar os dados:
+python scripts/coleta_dados/coletar_links_inep.py
+python scripts/coleta_dados/coleta_dados_oficiais
 
-2.	Pré-processamento
-Execute o script de pré-processamento:
+2.	Pré-processamento, Limpeza e EDA
+Execute os scripts de pré-processamento:
 python scripts/processamento_dados/pre_processamento.py
+python scripts/tratar_dados/pre_processamento.py
+	2.1	Análise Exploratória (EDA – Exploratory Data Analysis)
+	•	No notebook exploracao_dados.ipynb, rodamos algumas análises estatísticas básicas, histogramas (para taxa de evasão, por exemplo), e correlações.
+	•	Verificável possíveis outliers e valores ausentes, ajustando conforme preciso.
+	2.2 Modelagem Inicial
+	•	No notebook ajuste_hiperparametros.ipynb, teste hiperparâmetros de um modelo (Random Forest).
+	•	No notebook treinamento_modelo.ipynb, treinamos a versão final do Random Forest e salvamos o modelo (via joblib).
+	2.3 Análise dos Resultados
+	•	No notebook visualizacao_resultados
 
 3.	Treinamento do Modelo
 Treine o modelo de aprendizado de máquina:
@@ -184,9 +193,9 @@ Os arquivos CSV em dados/bruto/ contêm os dados brutos coletados das IES. As co
 
 6. Scripts
 
-6.1. raspagem_web.py ou coleta_dados_oficiais.py
+6.1. coleta_dados_oficiais.py
 
-Caminho: informacao/scripts/coleta_dados/raspagem_web.py ou coleta_dados_oficiais.py
+Caminho: informacao/scripts/coleta_dados_oficiais.py
 
 Descrição: Para coletar dados sobre taxas de ingresso, evasão e conclusão de universitários, é mais eficiente utilizar fontes de dados abertos fornecidas por instituições oficiais, como o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP) e o Ministério da Educação (MEC). Essas instituições disponibilizam microdados detalhados que podem ser acessados diretamente, eliminando a necessidade de web scraping.
 Script para coletar dados das IES utilizando web scraping.
