@@ -100,8 +100,8 @@
 
 # def main():
 #     # Diretórios
-#     pasta_bruto = '/Users/eddieferb/informacao/informacao/dados/bruto'
-#     pasta_processado = '/Users/eddieferb/informacao/informacao/dados/processado'
+#     pasta_bruto = './informacao/informacao/dados/bruto'
+#     pasta_processado = './informacao/informacao/dados/processado'
 #     nome_arquivo_saida = 'dados_ingresso_evasao_conclusao.csv'
 #     caminho_saida = os.path.join(pasta_processado, nome_arquivo_saida)
 
@@ -129,8 +129,8 @@ import pandas as pd
 # ==========================================================================
 
 # Diretórios de entrada e saída (ajuste conforme sua estrutura)
-PASTA_BRUTO = "/Users/eddieferb/informacao/informacao/dados/bruto"
-PASTA_PROCESSADO = "/Users/eddieferb/informacao/informacao/dados/processado"
+PASTA_BRUTO = "./informacao/informacao/dados/bruto"
+PASTA_PROCESSADO = "./informacao/informacao/dados/processado"
 
 # Nomes (ou trechos) que identificam cada arquivo no novo formato
 # Ajustados para refletir os arquivos efetivamente presentes no diretório

@@ -84,17 +84,17 @@ def main():
     }
     
     # Caminho para salvar os dados
-    pasta_dados = '/Users/eddieferb/informacao/informacao/dados/bruto'
+    pasta_dados = './informacao/informacao/dados/bruto'
     os.makedirs(pasta_dados, exist_ok=True)
     
     for fonte, url in urls.items():
         zip_caminho = os.path.join(pasta_dados, f'{fonte}.zip')
         pasta_extracao = os.path.join(pasta_dados, fonte)
-        os.makedirs(pasta_extracao, exist_ok=True)
+        # os.makedirs(pasta_extracao, exist_ok=True)
         
-        # Baixar o arquivo
-        print(f'Baixando dados da fonte: {fonte}')
-        baixar_arquivo(url, zip_caminho)
+        # # Baixar o arquivo
+        # print(f'Baixando dados da fonte: {fonte}')
+        # baixar_arquivo(url, zip_caminho)
         
         # Extrair o arquivo
         print(f'Extraindo dados da fonte: {fonte}')

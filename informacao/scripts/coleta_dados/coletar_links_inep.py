@@ -45,7 +45,7 @@ def salvar_links_em_arquivo(urls, caminho_arquivo):
 def main():
     url_base = "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior"
     palavra_chave = "microdados_censo_da_educacao_superior"
-    caminho_arquivo = "/Users/eddieferb/informacao/informacao/dados/bruto/lista-links.txt"
+    caminho_arquivo = "./informacao/informacao/dados/bruto/lista-links.txt"
 
     print("Coletando links do INEP...")
     urls = coletar_links_inep(url_base, palavra_chave)

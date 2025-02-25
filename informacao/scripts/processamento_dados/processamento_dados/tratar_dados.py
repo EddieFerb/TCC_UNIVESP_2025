@@ -1,4 +1,4 @@
-# # /Users/eddieferb/informacao/informacao/scripts/processamento_dados/processamento_dados/tratar_dados.py
+# # ./informacao/informacao/scripts/processamento_dados/processamento_dados/tratar_dados.py
 # # Este script realiza a limpeza e o tratamento de dados.
 
 # import os
@@ -62,9 +62,9 @@
 
 # def main():
 #     # Caminhos
-#     caminho_entrada = '/Users/eddieferb/informacao/informacao/dados/processado/dados_ingresso_evasao_conclusao.csv'
-#     caminho_saida_intermediario = '/Users/eddieferb/informacao/informacao/dados/intermediario/dados_tratados.csv'
-#     caminho_saida_final = '/Users/eddieferb/informacao/informacao/dados/processado/dados_tratados.csv'
+#     caminho_entrada = './informacao/informacao/dados/processado/dados_ingresso_evasao_conclusao.csv'
+#     caminho_saida_intermediario = './informacao/informacao/dados/intermediario/dados_tratados.csv'
+#     caminho_saida_final = './informacao/informacao/dados/processado/dados_tratados.csv'
 
 #     # Carregar os dados
 #     try:
@@ -95,7 +95,7 @@
 # if __name__ == '__main__':
 #     main()
 
-# /Users/eddieferb/informacao/informacao/scripts/processamento_dados/processamento_dados/tratar_dados.py
+# ./informacao/informacao/scripts/processamento_dados/processamento_dados/tratar_dados.py
 # Este script realiza a limpeza e o tratamento de dados para o Censo da Educação Superior 2023,
 # considerando apenas os arquivos resultantes do pré-processamento (dados_ies.csv e dados_cursos.csv).
 
@@ -156,15 +156,15 @@ def main():
     aplica limpeza mínima e salva em formato 'tratado' em pastas adequadas.
     """
     # Definição de caminhos (ajuste conforme necessário)
-    caminho_ies = '/Users/eddieferb/informacao/informacao/dados/processado/dados_ies.csv'
-    caminho_cursos = '/Users/eddieferb/informacao/informacao/dados/processado/dados_cursos.csv'
+    caminho_ies = './informacao/informacao/dados/processado/dados_ies.csv'
+    caminho_cursos = './informacao/informacao/dados/processado/dados_cursos.csv'
 
     # Saídas
-    caminho_ies_tratado = '/Users/eddieferb/informacao/informacao/dados/intermediario/dados_ies_tratado.csv'
-    caminho_cursos_tratado = '/Users/eddieferb/informacao/informacao/dados/intermediario/dados_cursos_tratado.csv'
+    caminho_ies_tratado = './informacao/informacao/dados/intermediario/dados_ies_tratado.csv'
+    caminho_cursos_tratado = './informacao/informacao/dados/intermediario/dados_cursos_tratado.csv'
 
-    caminho_ies_final = '/Users/eddieferb/informacao/informacao/dados/processado/dados_ies_tratado.csv'
-    caminho_cursos_final = '/Users/eddieferb/informacao/informacao/dados/processado/dados_cursos_tratado.csv'
+    caminho_ies_final = './informacao/informacao/dados/processado/dados_ies_tratado.csv'
+    caminho_cursos_final = './informacao/informacao/dados/processado/dados_cursos_tratado.csv'
 
     # Exemplo de colunas numéricas, se quiser converter:
     # Para IES (docentes)
