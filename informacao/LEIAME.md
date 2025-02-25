@@ -165,16 +165,26 @@ Este projeto tem como objetivo desenvolver uma aplicação para análise de dado
    - **Arquivos principais:**
      - `MICRODADOS_ED_SUP_IES_2023.CSV`
      - `MICRODADOS_CADASTRO_CURSOS_2023.CSV`
+   - Executar os scripts para tratamento dos dados:
+     ```bash
+	 python ./informacao/scripts/coleta_dados/coletar_links_inep.py
+     python ./informacao/scripts/coleta_dados/coleta_dados_oficiais.py
+     ```
 
 2. **Pré-processamento e Análise Exploratória**
    - Executar os scripts para tratamento dos dados:
      ```bash
-     python scripts/processamento_dados/pre_processamento.py
-     python scripts/processamento_dados/tratar_dados.py
+     python ./informacao/scripts/processamento_dados/pre_processamento.py
+     python ./informacao/scripts/processamento_dados/processamento_dados/tratar_dados.py
      ```
    - **O tratamento de dados foi ajustado para lidar apenas com 2023**.  
 
+# TODO: Fazer a modelagem e análises exploratórias
 3. **Modelagem e Treinamento do Modelo**
+	**Principais Arquivos a serem utilizados**
+	- dados_cursos_tratado.csv
+	- dados_ies_tratado.csv
+
    - **Agora o modelo é treinado somente com os dados de 2023**:
      ```bash
      python scripts/modelagem/treinamento_modelo.py
