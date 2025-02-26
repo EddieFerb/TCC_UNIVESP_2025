@@ -37,3 +37,7 @@ Pictures/
 # Ignorar extensões ou arquivos específicos
 *.photoslibrary
 *.log
+
+# R Project Files
+.Rproj.user
+*.Rproj
