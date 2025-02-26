@@ -70,9 +70,9 @@ Informacao-UEL/
 ├── LEIAME.md
 └── LICENCA
 
-# Análise de Dados Acadêmicos de IES Públicas de SP e PR
+# Análise de Dados Acadêmicos de IES Públicas 
 
-Este projeto tem como objetivo desenvolver uma aplicação para análise de dados acadêmicos de Instituições de Ensino Superior (IES) públicas dos estados de São Paulo (SP) e Paraná (PR), utilizando técnicas avançadas de Inteligência Artificial (IA), Aprendizado de Máquina (AM), Aprendizado Profundo (AP) e Redes Neurais Artificiais (RNA).
+Este projeto tem como objetivo desenvolver uma aplicação para análise de dados acadêmicos (ingresso, conclusão e evasão de alunos) de Instituições de Ensino Superior (IES) públicas Nacional INEP MEC, utilizando técnicas avançadas de Inteligência Artificial (IA), Aprendizado de Máquina (AM), Aprendizado Profundo (AP) e Redes Neurais Artificiais (RNA).
 
 ## Estrutura do Projeto
 
