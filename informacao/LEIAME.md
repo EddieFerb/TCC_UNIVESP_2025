@@ -167,7 +167,7 @@ Este projeto tem como objetivo desenvolver uma aplicação para análise de dado
      - `MICRODADOS_CADASTRO_CURSOS_2023.CSV`
    - Executar os scripts para tratamento dos dados:
      ```bash
-	 python ./informacao/scripts/coleta_dados/coletar_links_inep.py
+	   python ./informacao/scripts/coleta_dados/coletar_links_inep.py
      python ./informacao/scripts/coleta_dados/coleta_dados_oficiais.py
      ```
 
@@ -178,6 +178,9 @@ Este projeto tem como objetivo desenvolver uma aplicação para análise de dado
      python ./informacao/scripts/processamento_dados/processamento_dados/tratar_dados.py
      ```
    - **O tratamento de dados foi ajustado para lidar apenas com 2023**.  
+   - **Para demais ajustes, renomeie o nome da pasta para que o script consiga encontrar os arquivos conforme a foto 1 ao final do documento**
+   
+
 
 # TODO: Fazer a modelagem e análises exploratórias
 3. **Modelagem e Treinamento do Modelo**
@@ -218,6 +221,9 @@ Esses arquivos foram ajustados para conter apenas informações de **ingresso, e
    python scripts/coleta_dados/coleta_dados_oficiais.py
    ```
    **Web scraping foi removido.**
+
+_Foto 1: Correção no nome de algumas pastas_
+![Wrong Folders](documentos/diagramas/disclaimer_folders.png)
 
 ### **2. Pré-processamento e Tratamento**
    - **ANTES:** Unificação de dados de múltiplos anos.  
