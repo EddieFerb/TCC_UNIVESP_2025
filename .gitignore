@@ -41,3 +41,6 @@ Pictures/
 # R Project Files
 .Rproj.user
 *.Rproj
+
+# Download extra files
+download/
