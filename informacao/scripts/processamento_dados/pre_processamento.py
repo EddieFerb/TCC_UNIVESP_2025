@@ -132,16 +132,6 @@ import pandas as pd
 PASTA_BRUTO = "./informacao/informacao/dados/bruto"
 PASTA_PROCESSADO = "./informacao/informacao/dados/processado"
 
-# Nomes (ou trechos) que identificam cada arquivo no novo formato
-# Ajustados para refletir os arquivos efetivamente presentes no diretório
-ARQUIVO_IES = "MICRODADOS_ED_SUP_IES_2023.CSV"
-ARQUIVO_CURSOS = "MICRODADOS_CADASTRO_CURSOS_2023.CSV"
-
-# Arquivos de saída
-NOME_SAIDA_IES = "dados_ies.csv"
-NOME_SAIDA_CURSOS = "dados_cursos.csv"
-
-
 # ==========================================================================
 # COLUNAS DE INTERESSE E MAPEAMENTOS
 # ==========================================================================
@@ -257,22 +247,31 @@ def filtrar_renomear(df, colunas_relevantes, mapping):
 # ==========================================================================
 # PROCESSAMENTO PRINCIPAL
 # ==========================================================================
-def main():
+def main(year: int = 2023):
+    # Nomes (ou trechos) que identificam cada arquivo no novo formato
+    # Ajustados para refletir os arquivos efetivamente presentes no diretório
+    ARQUIVO_IES = f"MICRODADOS_ED_SUP_IES_{year}.CSV"
+    ARQUIVO_CURSOS = f"MICRODADOS_CADASTRO_CURSOS_{year}.CSV"
+
+    # Arquivos de saída
+    NOME_SAIDA_IES = f"dados_ies_{year}.csv"
+    NOME_SAIDA_CURSOS = f"dados_cursos_{year}.csv"
+
     # ----------------------------------------------------------------------
     # Verificar se os arquivos com nomes ajustados estão presentes
     # ----------------------------------------------------------------------
-    caminho_ies = os.path.join(PASTA_BRUTO, "INEP_2023-MICRODADOS-CENSO",
-                               "microdados_censo_da_educacao_superior_2023", "dados",
+    caminho_ies = os.path.join(PASTA_BRUTO, f"INEP_{year}-MICRODADOS-CENSO",
+                               f"microdados_censo_da_educacao_superior_{year}", "dados",
                                ARQUIVO_IES)
-    caminho_cursos = os.path.join(PASTA_BRUTO, "INEP_2023-MICRODADOS-CENSO",
-                                  "microdados_censo_da_educacao_superior_2023", "dados",
+    caminho_cursos = os.path.join(PASTA_BRUTO, f"INEP_{year}-MICRODADOS-CENSO",
+                                  f"microdados_censo_da_educacao_superior_{year}", "dados",
                                   ARQUIVO_CURSOS)
 
     df_ies_final = pd.DataFrame()
     df_cursos_final = pd.DataFrame()
 
     # ----------------------------------------------------------------------
-    # Carregar e processar MICRODADOS_ED_SUP_IES_2023.CSV
+    # Carregar e processar MICRODADOS_ED_SUP_IES_{year}.CSV
     # ----------------------------------------------------------------------
     if os.path.isfile(caminho_ies):
         df_ies = carregar_csv(caminho_ies)
@@ -284,7 +283,7 @@ def main():
         print(f"Aviso: Arquivo {ARQUIVO_IES} não encontrado em {caminho_ies}.")
 
     # ----------------------------------------------------------------------
-    # Carregar e processar MICRODADOS_CADASTRO_CURSOS_2023.CSV
+    # Carregar e processar MICRODADOS_CADASTRO_CURSOS_{year}.CSV
     # ----------------------------------------------------------------------
     if os.path.isfile(caminho_cursos):
         df_cursos = carregar_csv(caminho_cursos)
@@ -316,4 +315,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    for year in range(2017, 2024):
+        print(f"\tProcessing year {year} ...")
+        main(year)
