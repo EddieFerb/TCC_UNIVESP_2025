@@ -53,12 +53,12 @@ def main():
     # URLs reais dos microdados
     urls = {
         'INEP_2023-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2023.zip',
-        # 'INEP_2022-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2022.zip',
-        # 'INEP_2021-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2021.zip',
-        # 'INEP_2020-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2020.zip',
-        # 'INEP_2019-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2019.zip',
-        # 'INEP_2018-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2018.zip',
-        # 'INEP_2017-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2017.zip',
+        'INEP_2022-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2022.zip',
+        'INEP_2021-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2021.zip',
+        'INEP_2020-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2020.zip',
+        'INEP_2019-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2019.zip',
+        'INEP_2018-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2018.zip',
+        'INEP_2017-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2017.zip',
         # 'INEP_2016-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2016.zip',
         # 'INEP_2015-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2015.zip',
         # 'INEP_2014-MICRODADOS-CENSO': 'https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2014.zip',
@@ -90,11 +90,11 @@ def main():
     for fonte, url in urls.items():
         zip_caminho = os.path.join(pasta_dados, f'{fonte}.zip')
         pasta_extracao = os.path.join(pasta_dados, fonte)
-        # os.makedirs(pasta_extracao, exist_ok=True)
+        os.makedirs(pasta_extracao, exist_ok=True)
         
-        # # Baixar o arquivo
-        # print(f'Baixando dados da fonte: {fonte}')
-        # baixar_arquivo(url, zip_caminho)
+        # Baixar o arquivo
+        print(f'Baixando dados da fonte: {fonte}')
+        baixar_arquivo(url, zip_caminho)
         
         # Extrair o arquivo
         print(f'Extraindo dados da fonte: {fonte}')
