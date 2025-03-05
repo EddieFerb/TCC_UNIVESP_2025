@@ -315,6 +315,6 @@ def main(year: int = 2023):
 
 
 if __name__ == "__main__":
-    for year in range(2017, 2024):
+    for year in range(2011, 2023):
         print(f"\tProcessing year {year} ...")
         main(year)
