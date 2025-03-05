@@ -179,10 +179,16 @@ Este projeto tem como objetivo desenvolver uma aplicação para análise de dado
      ```
    - **O tratamento de dados foi ajustado para lidar apenas com 2023**.  
    - **Para demais ajustes, renomeie o nome da pasta para que o script consiga encontrar os arquivos conforme a foto 1 ao final do documento**
-   
 
+3. **Cálculos**
+    - Executar o script em R para obter os gráficos e os dados para a modelagem
+    ```bash
+    # Confira se você tem as bibliotecas devidamente instaladas em seu computador
+    Rscript ./informacao/scripts/analises/analises.R
+    ```
 
-# TODO: Fazer a modelagem e análises exploratórias
+    - A saída de dados é composta por arquivos com o prefixo `final_` que serevem de input para a modelagem.
+
 3. **Modelagem e Treinamento do Modelo**
 	**Principais Arquivos a serem utilizados**
 	- dados_cursos_tratado.csv
