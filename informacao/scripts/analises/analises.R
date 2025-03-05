@@ -99,6 +99,8 @@ Sugestão:
   * Administração: 4 Anos;
 
 Calcular a porcentagem de concluíntes em cima dos ingressantes para estes cursos.
+
+Fórmula adotada para evasão = 1 - (concluintes_{ano} / ingressantes_{ano - <duração do curso>})
 '
 
 ingress <- all_data |> 
@@ -120,7 +122,7 @@ ingress <- all_data |>
 
 
 # Taxa de conclusão por curso
-## Fórmula adotada para evasão = 1 - (concluintes_{ano} / ingressantes_{ano})
+## Fórmula adotada para evasão = 1 - (concluintes_{ano} / ingressantes_{ano - <duração do curso>})
 
 ### Engenharia Civil: 5 Anos ----
 eng_civil <- ingress |> 
