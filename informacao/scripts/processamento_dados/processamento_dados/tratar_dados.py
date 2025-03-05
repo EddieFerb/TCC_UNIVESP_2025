@@ -150,21 +150,21 @@ def salvar_dados_tratados(df, caminho_saida):
     except Exception as e:
         raise ValueError(f"Erro ao salvar os dados: {e}")
 
-def main():
+def main(year: int = 2023):
     """
     Faz a leitura dos arquivos já pré-processados (dados_ies.csv e dados_cursos.csv),
     aplica limpeza mínima e salva em formato 'tratado' em pastas adequadas.
     """
     # Definição de caminhos (ajuste conforme necessário)
-    caminho_ies = './informacao/informacao/dados/processado/dados_ies.csv'
-    caminho_cursos = './informacao/informacao/dados/processado/dados_cursos.csv'
+    caminho_ies = f'./informacao/informacao/dados/processado/dados_ies_{year}.csv'
+    caminho_cursos = f'./informacao/informacao/dados/processado/dados_cursos_{year}.csv'
 
     # Saídas
-    caminho_ies_tratado = './informacao/informacao/dados/intermediario/dados_ies_tratado.csv'
-    caminho_cursos_tratado = './informacao/informacao/dados/intermediario/dados_cursos_tratado.csv'
+    caminho_ies_tratado = f'./informacao/informacao/dados/intermediario/dados_ies_tratado_{year}.csv'
+    caminho_cursos_tratado = f'./informacao/informacao/dados/intermediario/dados_cursos_tratado_{year}.csv'
 
-    caminho_ies_final = './informacao/informacao/dados/processado/dados_ies_tratado.csv'
-    caminho_cursos_final = './informacao/informacao/dados/processado/dados_cursos_tratado.csv'
+    caminho_ies_final = f'./informacao/informacao/dados/processado/dados_ies_tratado_{year}.csv'
+    caminho_cursos_final = f'./informacao/informacao/dados/processado/dados_cursos_tratado_{year}.csv'
 
     # Exemplo de colunas numéricas, se quiser converter:
     # Para IES (docentes)
@@ -218,9 +218,11 @@ def main():
             # Salvar final
             salvar_dados_tratados(df_cursos_tratado, caminho_cursos_final)
         except ValueError as e:
-            print(f"Erro ao processar dados de Cursos: {e}")
+            print(f"Ano de {year} Erro ao processar dados de Cursos: {e}")
     else:
         print("Nenhum dado de Cursos disponível para tratar.")
 
 if __name__ == '__main__':
-    main()
+    for year in range(2011, 2023):
+        print(f"\tProcessing year {year} ...")
+        main(year)
