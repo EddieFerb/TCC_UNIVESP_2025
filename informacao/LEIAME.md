@@ -186,6 +186,11 @@ Este projeto tem como objetivo desenvolver uma aplicação para análise de dado
     # Confira se você tem as bibliotecas devidamente instaladas em seu computador
     Rscript ./informacao/scripts/analises/analises.R
     ```
+    - Caso prefira, poderá executar o mesmo script em Python
+    ```bash
+    # Confira se você tem as bibliotecas devidamente instaladas em seu computador
+    python ./informacao/scripts/analises/analises.py
+    ```
 
     - A saída de dados é composta por arquivos com o prefixo `final_` que serevem de input para a modelagem.
 
