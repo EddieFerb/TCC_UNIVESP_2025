@@ -1,3 +1,13 @@
 {
     "git.ignoreLimitWarning": true
 }
+
+{
+    "path-autocomplete.pathMappings": {
+        "/informacao": "${workspaceFolder}/informacao",
+        "/dados": "${workspaceFolder}/informacao/dados",
+        "/scripts": "${workspaceFolder}/informacao/scripts",
+        "/notebooks": "${workspaceFolder}/informacao/notebooks"
+    },
+    "path-autocomplete.extensionOnImport": true
+}

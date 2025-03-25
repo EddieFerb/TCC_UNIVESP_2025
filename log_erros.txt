@@ -1,14 +1,14 @@
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_2001-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2001/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 788, saw 2
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_2001-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2001/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 788, saw 2
 
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_2005-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2005/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 15561, saw 3
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_2005-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2005/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 15561, saw 3
 
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_2000-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2000/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 10008, saw 2
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_2000-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2000/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 10008, saw 2
 
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_2004-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2004/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 6031, saw 3
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_2004-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2004/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 6031, saw 3
 
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_1999-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 1999/DADOS/INSTITUICAO.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 416, saw 3
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_1999-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 1999/DADOS/INSTITUICAO.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 416, saw 3
 
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_1998-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 1998/DADOS/INSTITUICAO.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 337, saw 4
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_1998-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 1998/DADOS/INSTITUICAO.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 337, saw 4
 
-Arquivo: /Users/eddieferb/informacao/informacao/dados/bruto/INEP_2006-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2006/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 5324, saw 3
+Arquivo: /Users/eddieferb/informacao/dados/bruto/INEP_2006-MICRODADOS-CENSO/Microdados do Censo da Educaç╞o Superior 2006/DADOS/GRADUACAO_PRESENCIAL.CSV, Erro: Error tokenizing data. C error: Expected 1 fields in line 5324, saw 3
 

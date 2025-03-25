@@ -1,12 +1,12 @@
 # Arquivos de ambiente e dados sensíveis
 # Ignorar dados brutos e intermediários
-informacao/informacao/dados/bruto/
-informacao/informacao/dados/intermediario/
-informacao/informacao/dados/processado/
+informacao/dados/bruto/
+informacao/dados/intermediario/
+informacao/dados/processado/
 
 # Ignorar modelos treinados e arquivos salvos
-informacao/informacao/modelos/modelos_salvos/
-informacao/informacao/modelos/resultados_modelos/
+informacao/modelos/modelos_salvos/
+informacao/modelos/resultados_modelos/
 
 # Ignorar logs e arquivos temporários
 *.log
